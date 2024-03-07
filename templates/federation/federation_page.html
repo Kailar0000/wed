@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    {% for news in new_news %}
+    <div>
+        <div>
+            <div>
+                <div>
+                    <h5>{{ news.title }}</h5>
+                    <div>{{ news.time }}</div>
+                    <p>{{ news.body }}</p>
+                  </div>
+                </div>
+            </div>
+      </div>
+    {% endfor %}
+{% endblock %}

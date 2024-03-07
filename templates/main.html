@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+    <div>
+        <nav>
+            <div>
+                <ul>
+                  <li>
+                    <a href="{% url 'home' %}">Home</a>
+                  </li>
+                  <li>
+                    <a href="{% url 'login' %}">LogIn</a>
+                  </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div>
+        {% block content %}
+
+        {% endblock %}
+    </div>
+</body>
+</html>
